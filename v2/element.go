@@ -2,6 +2,7 @@ package orderedmap
 
 import (
 	"container/list"
+
 	"golang.org/x/exp/constraints"
 )
 

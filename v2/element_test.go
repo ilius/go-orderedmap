@@ -1,9 +1,10 @@
 package orderedmap_test
 
 import (
+	"testing"
+
 	"github.com/elliotchance/orderedmap/v2"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestElement_Key(t *testing.T) {

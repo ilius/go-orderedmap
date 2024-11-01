@@ -290,7 +290,10 @@ func TestOrderedMapJSON(t *testing.T) {
 		json, err := json.Marshal(m)
 
 		assert.NoError(t, err)
-		assert.Equal(t, `{"string":"foo","number":1337,"slice":["foo","bar"],"map":{"foo":"bar"},"bool":true,"nil":null,"struct":{"foo_tag":"bar"},"orderedMap":{"string":"foo","number":1337,"slice":["foo","bar"]}}`, string(json))
+		assert.Equal(
+			t,
+			`{"string":"foo","number":1337,"slice":["foo","bar"],"map":{"foo":"bar"},"bool":true,"nil":null,"struct":{"foo_tag":"bar"},"orderedMap":{"string":"foo","number":1337,"slice":["foo","bar"]}}`,
+			string(json),
+		)
 	})
-
 }

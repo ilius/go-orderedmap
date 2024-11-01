@@ -504,6 +504,7 @@ func benchmarkMap_Iterate(multiplier int) func(b *testing.B) {
 		}
 	}
 }
+
 func BenchmarkMap_Iterate(b *testing.B) {
 	benchmarkMap_Iterate(1)(b)
 }
@@ -673,6 +674,7 @@ func benchmarkMapString_Iterate(multiplier int) func(b *testing.B) {
 		}
 	}
 }
+
 func BenchmarkMapString_Iterate(b *testing.B) {
 	benchmarkMapString_Iterate(1)(b)
 }
@@ -831,6 +833,7 @@ func benchmarkBigMap_Iterate() func(b *testing.B) {
 		}
 	}
 }
+
 func BenchmarkBigMap_Iterate(b *testing.B) {
 	benchmarkBigMap_Iterate()(b)
 }
@@ -961,6 +964,7 @@ func benchmarkBigMapString_Iterate() func(b *testing.B) {
 		}
 	}
 }
+
 func BenchmarkBigMapString_Iterate(b *testing.B) {
 	benchmarkBigMapString_Iterate()(b)
 }
